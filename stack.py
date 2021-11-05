@@ -4,6 +4,9 @@ from ListEl import El
 
 
 class Stack:
+    def __len__(self):
+        return self.stack.__len__
+
     def __init__(self):
         self.stack = List()
 
