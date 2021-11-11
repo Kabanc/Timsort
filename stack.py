@@ -4,11 +4,11 @@ from ListEl import El
 
 
 class Stack:
-    def __len__(self):
-        return self.stack.__len__
-
     def __init__(self):
         self.stack = List()
+
+    def __len__(self):
+        return self.stack.__len__()
 
     def pop(self):
         if not self.isEmpty():
